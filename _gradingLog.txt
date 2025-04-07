@@ -1,0 +1,132 @@
+
+----Tests of Swap----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+10
+20
+
+Expected Output:
+"After swapping, the values of the two numbers are 20.0 and 10.0"
+
+Actual Output:
+"After swapping, the values of the two numbers are 20.0 and 10.0"
+
+Swap TEST 01                                      PASSED    
+
+____Test 02_______________________________________________________
+
+Input:
+3
+5
+
+Expected Output:
+"After swapping, the values of the two numbers are 5.0 and 3.0"
+
+Actual Output:
+"After swapping, the values of the two numbers are 5.0 and 3.0"
+
+Swap TEST 02                                      PASSED    
+
+++++ 2 Tests of Swap COMPLETE +++++++++++++++++++++++++++
+
+----Tests for CircleArea----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+10
+
+Expected output must fit RegEx:
+"(?si).*?10.*?314.*"
+
+Actual Output:
+"Enter the radius 
+The radius of the circle is 10.00 and the area is 314.00.
+"
+
+CircleArea TEST 01                                PASSED    
+
+____Test 02_______________________________________________________
+
+Input:
+20
+
+Expected output must fit RegEx:
+"(?si).*?20.*?1256.*"
+
+Actual Output:
+"Enter the radius 
+The radius of the circle is 20.00 and the area is 1256.00.
+"
+
+CircleArea TEST 02                                PASSED    
+
+++++ 2 tests for CircleArea COMPLETE +++++++++++++++++++++++++++
+
+----Tests of RestaurantBill----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+100
+20
+
+Expected output must fit RegEx:
+"(?si).*?100.*?10.*?22.*?132.*"
+
+Actual Output:
+""
+
+RestaurantBill TEST 01                            FAILED    
+
+____Test 02_______________________________________________________
+
+Input:
+107
+15
+
+Expected output must fit RegEx:
+"(?si).*?107.*?10\.7.*?17\.66.*?135\.36.*"
+
+Actual Output:
+""
+
+RestaurantBill TEST 02                            FAILED    
+
+++++ 2 Tests of RestaurantBill COMPLETE +++++++++++++++++++++++++++
+
+----Tests of InterestEarned----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+1000
+4.25
+12
+
+Expected output must fit RegEx:
+"(?si).*?4.25.*?12.*?1000.*?43.34.*?1043.34.*"
+
+Actual Output:
+""
+
+InterestEarned TEST 01                            FAILED    
+
+____Test 02_______________________________________________________
+
+Input:
+1000
+5
+2
+
+Expected output must fit RegEx:
+"(?si).*?5.0.*?2.*?1000.*?50.63.*?1050.63.*"
+
+Actual Output:
+""
+
+InterestEarned TEST 02                            FAILED    
+
+++++ 2 Tests of InterestEarned COMPLETE +++++++++++++++++++++++++++
