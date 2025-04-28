@@ -1,0 +1,21 @@
+/*
+ * Title: [Project Title Template]
+ * 
+ * Description: 
+ * [Provide a brief overview of the project. Include the purpose, functionality, and key features.]
+ * 
+ * Requirements:
+ * 1. [List the first requirement]
+ * 2. [List the second requirement]
+ * 3. [Continue listing additional requirements as needed]
+ * 
+ * Changelog:
+ * - [Version 1.0] - [Date]: [Initial release with a short description of implemented features]
+ * - [Version X.X] - [Date]: [Description of updates or changes]
+ * - [Add more versions as needed]
+ * 
+ * Author: Brent Barrows
+ * Date: [Creation Date]
+ * Class: CS& 141 Java 1
+ * Institution: LakeWashingtonTech
+ */

@@ -1,0 +1,181 @@
+
+----Tests for DigitSum--------------------------------------------------------
+
+____Test 01____________________________________________________________________________
+
+Input:
+222222222
+
+Expected output must fit RegEx:
+"(?si).*?222222222.*18.*"
+
+Actual Output:
+"Enter an integer => You entered number 5. The sum of its digits is -1
+"
+
+DigitSum TEST 01 - valid positive integer                                       FAILED    
+
+_____Test 02____________________________________________________________________________
+
+Input:
+-112121
+
+Expected output must fit RegEx:
+"(?si).*?-112121.*8.*"
+
+Actual Output:
+"Enter an integer => You entered number 5. The sum of its digits is -1
+"
+
+DigitSum TEST 02 - valid negative integer                                       FAILED    
+
+_____Test 03____________________________________________________________________________
+
+Input:
+abc
+9.33
+123
+
+Expected output must fit RegEx:
+"(?si).*?ERROR.*ERROR.*123.*6.*"
+
+Actual Output:
+"Enter an integer => You entered number 5. The sum of its digits is -1
+"
+
+DigitSum TEST 03 - invalid integer in input                                     FAILED    
+
+++++ 3 Tests of DigitSum COMPLETE +++++++++++++++++++++++++++
+
+----Tests for GreatestAndLeast--------------------------------------------------------
+
+____Test 01____________________________________________________________________________
+
+Input:
+-99
+
+Expected output must fit RegEx:
+"(?si).*?No numbers were entered.*"
+
+Actual Output:
+""
+
+GreatestAndLeast TEST 01 - no numbers                                           FAILED    
+
+_____Test 02____________________________________________________________________________
+
+Input:
+3
+-99
+
+Expected output must fit RegEx:
+"(?si).*?largest.*?3.*?smallest.*?3.*"
+
+Actual Output:
+""
+
+GreatestAndLeast TEST 02 - no numbers                                           FAILED    
+
+_____Test 03____________________________________________________________________________
+
+Input:
+-1
+2
+-8
+-9
+3
+-99
+
+Expected output must fit RegEx:
+"(?si).*?ERROR.*?ERROR.*?ERROR.*?largest.*?3.*?smallest.*?2.*"
+
+Actual Output:
+""
+
+GreatestAndLeast TEST 03 - negative numbers in input                            FAILED    
+
+_____Test 04____________________________________________________________________________
+
+Input:
+-9
+-1
+-99
+
+Expected output must fit RegEx:
+"(?si).*?ERROR.*?ERROR.*?No numbers were entered.*"
+
+Actual Output:
+""
+
+GreatestAndLeast TEST 04 - Negative input, no numbers                           FAILED    
+
+++++ 4 Tests of GreatestAndLeast COMPLETE +++++++++++++++++++++++++++
+
+----Tests for RandomsInFile--------------------------------------------------------
+
+____Test 01____________________________________________________________________________
+
+Input:
+1
+1
+abc.txt
+
+This test checks if file with name abc.txt was created and was filled with 100 numbers in range [1, 1]
+
+RandomsInFile TEST 01 file structure                                            FAILED    
+ERROR: File was not created
+
+_____Test 02____________________________________________________________________________
+
+Input:
+zz
+3.5
+1
+5.6
+hh
+5
+a1.txt
+
+Expected output must fit RegEx:
+"(?si).*?ERROR.*?ERROR.*?ERROR.*?ERROR.*"
+
+Actual Output:
+""
+
+RandomsInFile TEST 02 - input validation - wrong type                           FAILED    
+ERROR: output file was not created
+
+_____Test 03____________________________________________________________________________
+
+Input:
+-1
+aaa
+-8
+1
+abc
+-40
+3
+a2.txt
+
+Expected output must fit RegEx:
+"(?si).*?ERROR.*?ERROR.*?ERROR.*?ERROR.*?ERROR.*"
+RandomsInFile TEST 03 - input validation - wrong type & negatives               FAILED    
+ERROR: output file was not created
+
+_____Test 04____________________________________________________________________________
+
+Input:
+6
+1
+a3.txt
+
+Expected output must fit RegEx:
+"(?si).*"
+
+Actual Output:
+""
+
+RandomsInFile TEST 04 - incorrect range order                                   FAILED    
+ERROR: output file was not created
+
+++++ 4 Tests of RandomsInFile COMPLETE +++++++++++++++++++++++++++
