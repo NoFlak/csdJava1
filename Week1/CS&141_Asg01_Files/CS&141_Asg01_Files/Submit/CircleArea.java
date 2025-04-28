@@ -27,9 +27,17 @@ public class CircleArea {
     
     // ********* Problem 2: Circle Area Problem ***********
     
+<<<<<<< HEAD
     // 1. Declare double constant PI to hold 3.14
     final double PI = 3.14;
     // 2. Declare a double variable to store radius 
+=======
+    // TODO Implement the following step-by-step plan
+    
+    // 1. Declare double constant PI to hold 3.14
+    final double PI = 3.14;
+    // 2. Declare a double variable to store radius
+>>>>>>> c30ae464b02ac6aaa91e70e2b68d88a3dc1a133f
     double radius;
     // 3. Declare a double variable to store area   
     double area;
@@ -43,8 +51,13 @@ public class CircleArea {
     // 7. Output the circle's radius and area values in user-friendly fashion
     System.out.printf("The radius of the circle is %.2f and the area is %.2f.\n", radius, area);
         
+<<<<<<< HEAD
     scanner.close();
     
+=======
+        scanner.close();
+    // ********* End of Circle Area Problem code area ***********
+>>>>>>> c30ae464b02ac6aaa91e70e2b68d88a3dc1a133f
   
     }
     
