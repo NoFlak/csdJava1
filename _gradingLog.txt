@@ -10,10 +10,10 @@ Expected output must fit RegEx:
 "(?si).*?222222222.*18.*"
 
 Actual Output:
-"Enter an integer => You entered number 5. The sum of its digits is -1
+"Enter an integer => You entered number 222222222. The sum of its digits is 18
 "
 
-DigitSum TEST 01 - valid positive integer                                       FAILED    
+DigitSum TEST 01 - valid positive integer                                       PASSED    
 
 _____Test 02____________________________________________________________________________
 
@@ -24,10 +24,10 @@ Expected output must fit RegEx:
 "(?si).*?-112121.*8.*"
 
 Actual Output:
-"Enter an integer => You entered number 5. The sum of its digits is -1
+"Enter an integer => You entered number -112121. The sum of its digits is 8
 "
 
-DigitSum TEST 02 - valid negative integer                                       FAILED    
+DigitSum TEST 02 - valid negative integer                                       PASSED    
 
 _____Test 03____________________________________________________________________________
 
@@ -40,10 +40,12 @@ Expected output must fit RegEx:
 "(?si).*?ERROR.*ERROR.*123.*6.*"
 
 Actual Output:
-"Enter an integer => You entered number 5. The sum of its digits is -1
+"Enter an integer => ERROR: Invalid input. Please enter an integer.
+Enter an integer => ERROR: Invalid input. Please enter an integer.
+Enter an integer => You entered number 123. The sum of its digits is 6
 "
 
-DigitSum TEST 03 - invalid integer in input                                     FAILED    
+DigitSum TEST 03 - invalid integer in input                                     PASSED    
 
 ++++ 3 Tests of DigitSum COMPLETE +++++++++++++++++++++++++++
 
@@ -58,9 +60,10 @@ Expected output must fit RegEx:
 "(?si).*?No numbers were entered.*"
 
 Actual Output:
-""
+"Enter an integer (-99 to stop): No numbers were entered.
+"
 
-GreatestAndLeast TEST 01 - no numbers                                           FAILED    
+GreatestAndLeast TEST 01 - no numbers                                           PASSED    
 
 _____Test 02____________________________________________________________________________
 
@@ -72,9 +75,11 @@ Expected output must fit RegEx:
 "(?si).*?largest.*?3.*?smallest.*?3.*"
 
 Actual Output:
-""
+"Enter an integer (-99 to stop): Enter an integer (-99 to stop): largest: 3
+smallest: 3
+"
 
-GreatestAndLeast TEST 02 - no numbers                                           FAILED    
+GreatestAndLeast TEST 02 - no numbers                                           PASSED    
 
 _____Test 03____________________________________________________________________________
 
@@ -90,9 +95,14 @@ Expected output must fit RegEx:
 "(?si).*?ERROR.*?ERROR.*?ERROR.*?largest.*?3.*?smallest.*?2.*"
 
 Actual Output:
-""
+"Enter an integer (-99 to stop): ERROR: Negative number entered. Please enter a positive integer or -99 to stop.
+Enter an integer (-99 to stop): Enter an integer (-99 to stop): ERROR: Negative number entered. Please enter a positive integer or -99 to stop.
+Enter an integer (-99 to stop): ERROR: Negative number entered. Please enter a positive integer or -99 to stop.
+Enter an integer (-99 to stop): Enter an integer (-99 to stop): largest: 3
+smallest: 2
+"
 
-GreatestAndLeast TEST 03 - negative numbers in input                            FAILED    
+GreatestAndLeast TEST 03 - negative numbers in input                            PASSED    
 
 _____Test 04____________________________________________________________________________
 
@@ -105,9 +115,12 @@ Expected output must fit RegEx:
 "(?si).*?ERROR.*?ERROR.*?No numbers were entered.*"
 
 Actual Output:
-""
+"Enter an integer (-99 to stop): ERROR: Negative number entered. Please enter a positive integer or -99 to stop.
+Enter an integer (-99 to stop): ERROR: Negative number entered. Please enter a positive integer or -99 to stop.
+Enter an integer (-99 to stop): No numbers were entered.
+"
 
-GreatestAndLeast TEST 04 - Negative input, no numbers                           FAILED    
+GreatestAndLeast TEST 04 - Negative input, no numbers                           PASSED    
 
 ++++ 4 Tests of GreatestAndLeast COMPLETE +++++++++++++++++++++++++++
 
