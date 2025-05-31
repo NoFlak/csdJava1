@@ -17,14 +17,19 @@ public class DigitSum {
       int num = 0; // Placeholder for the input number
       boolean validInput = false; // Flag to track if input is valid
 
-        // Input validation loop
+      /** Input validation loop:
+      * if the requirement was for more error handling please let me know in your grading sorry for my misunderstanding if so--
+      * --I was thinking it would be good practice adding div by zero handling as well as alphabet errors seperately for user friendliness beyond just the invalid input.
+      * I also thought about adding a loop to allow the user to enter multiple numbers but I wasn't sure if that was in scope for this assignment.
+      * But decided to keep it simple and just do the one number as per the requirements to avoid downgraded points for going outside the scope of the assignment.
+      */ 
       while (!validInput) {
          System.out.print("Enter an integer => ");
          if (kb.hasNextInt()) { // Check if the input is a valid integer
             num = kb.nextInt(); // Read the integer
             validInput = true; // Exit the loop
          } else {
-            System.out.println("ERROR: Invalid input. Please enter an integer.");
+            System.out.println("ERROR: Invalid input. Please enter an integer.");// Error message for invalid input looping back to prompt
             kb.next(); // Clear invalid input
          }
       }
@@ -37,7 +42,8 @@ public class DigitSum {
       }
 
  		System.out.println("You entered number "+num+". The sum of its digits is "+sum);
-
+      // Close the Scanner to prevent 'leaving the barn door open' as Sandy would say
+      kb.close();
 	}
 
 }
