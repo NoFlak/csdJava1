@@ -31,6 +31,7 @@ public class DigitSum {
          } else {
             System.out.println("ERROR: Invalid input. Please enter an integer.");// Error message for invalid input looping back to prompt
             kb.next(); // Clear invalid input
+            // I am not 100% sure if this is the best way to do this but it works for me...
          }
       }
       int sum = 0; // placeholder

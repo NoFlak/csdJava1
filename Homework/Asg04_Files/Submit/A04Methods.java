@@ -1,10 +1,13 @@
 import java.io.*;
-import java.util.Scanner;
+import java.util.Scanner; 
 /**
-* @author YOUR NAME here
+* @author Brent Barrows
+* Requirements:
+* - Code must run correctly on the test cases.
+* - Do not alter any of the tests. If your code is not passing a test, find and fix errors in your method implementation rather than changing the test code.
 */
 
-public class A04Methods {
+public class A04Methods { // a function but for java
 	
     /**
      * @param args the command line arguments
@@ -16,15 +19,97 @@ public class A04Methods {
     }
 
 
+    /**
+     * Generates a numeric pattern based on the given size and direction.
+     * @param size defines the size of pattern (must be positive)
+     * @param direction defines the direction of pattern (true for ascending, false for descending)
+     * @return string containing the numeric pattern
+     * @throws IllegalArgumentException when size is 0 or negative
+     */
     public static String numericPattern(int size, boolean direction) throws IllegalArgumentException
     {
-      return "";
+        // Validate size parameter
+        if (size <= 0) {
+            throw new IllegalArgumentException("Size must be positive");
+        }
+
+        StringBuilder pattern = new StringBuilder();
+
+        if (direction) {
+            // Generate ascending pattern (e.g., "12321")
+            for (int i = 1; i <= size; i++) {
+                pattern.append(i);
+            }
+            for (int i = size - 1; i >= 1; i--) {
+                pattern.append(i);
+            }
+        } else {
+            // Generate descending pattern (e.g., "32123")
+            for (int i = size; i >= 1; i--) {
+                pattern.append(i);
+            }
+            for (int i = 2; i <= size; i++) {
+                pattern.append(i);
+            }
+        }
+
+        return pattern.toString();
     }
 
     
+    /**
+     * Analyzes integers in a file and writes statistics to another file.
+     * Statistics include: count, sum, largest, and smallest values.
+     * @param inputFileName name of file containing integers to analyze
+     * @param outputFileName name of file to write analysis results
+     * @throws IOException if file operations fail
+     */
     public static void fileAnalysis(String inputFileName, String outputFileName) throws IOException
     {
-    
+        // Open input and output files
+        Scanner in = new Scanner(new File(inputFileName));
+        PrintWriter out = new PrintWriter(new FileWriter(outputFileName));
+
+        // Check if file is empty
+        if (!in.hasNextInt()) {
+            out.printf("Numeric data file \"%s\" is empty\n", inputFileName);
+            in.close();
+            out.close();
+            return;
+        }
+
+        // Variables declared for statistics and counting
+        int count = 0;
+        int sum = 0;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        int firstNum = 0;
+
+        // Process one number at a time
+        while (in.hasNextInt()) {
+            int num = in.nextInt();
+            if (count == 0) firstNum = num;
+            count++;
+            sum += num;
+            min = Math.min(min, num);
+            max = Math.max(max, num);
+        }
+
+        // Write appropriate output based on number count
+        if (count == 1) {
+            out.printf("Numeric data file \"%s\" has only one number: %d\n", 
+                      inputFileName, firstNum);
+        } else {
+            out.printf("Numeric Data File \"%s\" Analysis\n", inputFileName);
+            out.printf("Number of integers: %d\n", count);
+            out.printf("The sum of all integers in file: %d\n", sum);
+            out.printf("The largest integer in the set: %d\n", max);
+            out.printf("The smallest integer in the set: %d\n", min);
+        }
+
+        // Close resources
+        in.close();
+        out.close();
     }
  
   
