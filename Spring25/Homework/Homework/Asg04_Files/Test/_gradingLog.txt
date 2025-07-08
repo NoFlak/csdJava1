@@ -1,0 +1,112 @@
+
+----numericPattern() Tests-------------------------------------------------------
+
+numericPattern() TEST 01 - pattern of size 1                                    FAILED    
+numericPattern() TEST 02 - pattern of given positive size                       FAILED    
+numericPattern() TEST 03 - IllegalArgumentException - size 0                    FAILED    
+numericPattern() TEST 03 - IllegalArgumentException - negative size             FAILED    
+
+++++ 4 Tests of numericPattern() method COMPLETE +++++++++++++++++++++++++++
+
+----fileAnalysis() Tests-------------------------------------------------------
+
+FAIL: Unexpected IOException. fileAnalysis() may not be implemented yet
+++++ 7 Tests of fileAnalysis() method COMPLETE +++++++++++++++++++++++++++
+
+----Tests for ValidateInt-------------------------------------------------------------
+
+____Test 01____________________________________________________________________________
+
+Input:
+10
+
+Expected output must fit RegEx:
+"(?si).*?Enter test value.*?"
+
+Actual Output:
+""
+
+Returned integer value:
+-100
+
+validateInt() TEST 01 - one positive integer                                    FAILED    
+
+_____Test 02____________________________________________________________________________
+
+Input:
+-3
+
+Expected output must fit RegEx:
+"(?si).*?Enter test value.*?"
+
+Actual Output:
+""
+
+Returned integer value:
+-100
+
+validateInt() TEST 01 - one negative integer                                    FAILED    
+
+_____Test 03____________________________________________________________________________
+
+Input:
+yiuyuiy
+4.5
+77
+
+Expected output must fit RegEx:
+"(?si).*?ERROR.*?ERROR.*"
+
+Actual Output:
+""
+
+Returned integer value:
+-100
+
+validateInt() TEST 01 - one negative integer                                    FAILED    
+
+++++ 3 Tests of validateInt() method COMPLETE +++++++++++++++++++++++++++
+
+----Tests for NumericPatternMenu--------------------------------------------------------
+
+____Test 01____________________________________________________________________________
+
+Input:
+1
+5
+2
+4
+3
+
+Expected output must fit RegEx:
+"(?si).*?Numeric Pattern Display.*?123454321.*?Numeric Pattern Display.*?4321234.*?Numeric Pattern Display.*"
+
+Actual Output:
+""
+
+NumericPatternMenu TEST 01 - perfect input                                      FAILED    
+
+_____Test 02____________________________________________________________________________
+
+Input:
+abc
+6
+1
+oops
+-7
+5
+2
+3.4
+-1
+7
+3
+
+Expected output must fit RegEx:
+"(?si).*?Numeric Pattern Display.*?ERROR.*?Numeric Pattern Display.*?ERROR.*?Numeric Pattern Display.*?size.*?ERROR.*?size.*?ERROR.*?size.*?123454321.*?Numeric Pattern Display.*?size.*?ERROR.*?size.*?ERROR.*?size.*?7654321234567.*?Numeric Pattern Display.*"
+
+Actual Output:
+""
+
+NumericPatternMenu TEST 02 - incorrect user input                               FAILED    
+
+++++ 3 Tests of NumericPatternMenu COMPLETE +++++++++++++++++++++++++++
