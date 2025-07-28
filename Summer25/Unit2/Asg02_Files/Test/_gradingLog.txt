@@ -1,0 +1,83 @@
+
+----Tests for isRightTri()----------------------------------------
+isRightTri() TEST 01                              PASSED    
+isRightTri() TEST 02                              PASSED    
+isRightTri() TEST 03                              PASSED    
+isRightTri() TEST 04                              PASSED    
+isRightTri() TEST 05                              PASSED    
+isRightTri() TEST 06                              PASSED    
+isRightTri() TEST 07                              PASSED    
+
+----Tests for toll520Bridge()----------------------------------------
+toll520Bridge() TEST 01                           PASSED    
+toll520Bridge() TEST 02                           PASSED    
+toll520Bridge() TEST 03                           PASSED    
+toll520Bridge() TEST 04                           PASSED    
+toll520Bridge() TEST 05                           PASSED    
+toll520Bridge() TEST 06                           PASSED    
+toll520Bridge() TEST 07                           PASSED    
+toll520Bridge() TEST 08                           PASSED    
+toll520Bridge() TEST 09                           FAILED    
+toll520Bridge() TEST 10                           PASSED    
+
+----Tests for MathTutor----------------------------------------
+
+Input:
+5
+1
+123
+10
+1
+123
+3
+
+Expected output must fit RegEx:
+"(?si).*?Math Tutor.*?ERROR.*?Math Tutor.*?\+.*?ERROR.*?Math Tutor.*?\+.*?Math Tutor.*"
+
+Actual Output:
+"
+Math Tutor
+1. Addition problem
+2. Subtraction problem
+3. Quit
+Enter your choice (1 - 3): Invalid, please user 1, 2, or 3.
+
+Math Tutor
+1. Addition problem
+2. Subtraction problem
+3. Quit
+Enter your choice (1 - 3):    948
++  107
+------
+
+Your answer: Incorrect. The correct answer was 1055.
+
+Math Tutor
+1. Addition problem
+2. Subtraction problem
+3. Quit
+Enter your choice (1 - 3): Invalid, please user 1, 2, or 3.
+
+Math Tutor
+1. Addition problem
+2. Subtraction problem
+3. Quit
+Enter your choice (1 - 3):    485
++  110
+------
+
+Your answer: Incorrect. The correct answer was 595.
+
+Math Tutor
+1. Addition problem
+2. Subtraction problem
+3. Quit
+Enter your choice (1 - 3): Goodbye
+"
+
+MathTutor TEST 01 - partial tests                 FAILED    
+
+ATTENTION! MathTutor must be tested manually. Make sure that 
+1)Random numbers are in the correct range. 
+2)Output formatted according to specs - the numbers aligned correctly and a number with more digits appear on top of the one with less digits.
+3)The code is commented thoroughly.

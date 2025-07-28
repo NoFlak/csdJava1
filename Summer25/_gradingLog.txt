@@ -1,0 +1,138 @@
+
+----Tests of Swap----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+10
+20
+
+Expected Output:
+"After swapping, the values of the two numbers are 20.0 and 10.0"
+
+Actual Output:
+"After swapping, the values of the two numbers are 20.0 and 20.0"
+
+Swap TEST 01                                      FAILED    
+
+____Test 02_______________________________________________________
+
+Input:
+3
+5
+
+Expected Output:
+"After swapping, the values of the two numbers are 5.0 and 3.0"
+
+Actual Output:
+"After swapping, the values of the two numbers are 5.0 and 5.0"
+
+Swap TEST 02                                      FAILED    
+
+++++ 2 Tests of Swap COMPLETE +++++++++++++++++++++++++++
+
+----Tests for CircleArea----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+10
+
+Expected output must fit RegEx:
+"(?si).*?10.*?314.*"
+
+Actual Output:
+""
+
+CircleArea TEST 01                                FAILED    
+
+____Test 02_______________________________________________________
+
+Input:
+20
+
+Expected output must fit RegEx:
+"(?si).*?20.*?1256.*"
+
+Actual Output:
+""
+
+CircleArea TEST 02                                FAILED    
+
+++++ 2 tests for CircleArea COMPLETE +++++++++++++++++++++++++++
+
+----Tests of RestaurantBill----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+100
+20
+
+Expected output must fit RegEx:
+"(?si).*?100.*?10.*?22.*?132.*"
+
+Actual Output:
+""
+
+RestaurantBill TEST 01                            FAILED    
+
+____Test 02_______________________________________________________
+
+Input:
+100
+15
+
+Expected output must fit RegEx:
+"(?si).*?100.*?10.*?16.*?126.*"
+
+Actual Output:
+""
+
+RestaurantBill TEST 02                            FAILED    
+
+++++ 2 Tests of RestaurantBill COMPLETE +++++++++++++++++++++++++++
+
+----Tests of InterestEarned----------------------------------------
+
+____Test 01_______________________________________________________
+
+Input:
+1000
+4.25
+12
+
+Expected output must fit RegEx:
+"(?si).*?4.25.*?12.*?1000.*?43.34.*?1043.34.*"
+
+Actual Output:
+"Enter the principal amount: Enter the annual interest rate (in %): Enter the times compounded per year?: Principal: 1000.00
+Annual Interest Rate: 4.25%
+Time (in years): 12
+Interest Earned: 510.00
+Total Earned: 1510.00
+"
+
+InterestEarned TEST 01                            FAILED    
+
+____Test 02_______________________________________________________
+
+Input:
+1000
+5
+2
+
+Expected output must fit RegEx:
+"(?si).*?5.0.*?2.*?1000.*?50.63.*?1050.63.*"
+
+Actual Output:
+"Enter the principal amount: Enter the annual interest rate (in %): Enter the times compounded per year?: Principal: 1000.00
+Annual Interest Rate: 5.00%
+Time (in years): 2
+Interest Earned: 100.00
+Total Earned: 1100.00
+"
+
+InterestEarned TEST 02                            FAILED    
+
+++++ 2 Tests of InterestEarned COMPLETE +++++++++++++++++++++++++++
